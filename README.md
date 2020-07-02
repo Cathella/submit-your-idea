@@ -1,0 +1,2 @@
+# submit-your-idea
+I need page design for 'Submit your idea' page. The main purpose of this page is to allow users to submit project ideas or request application to be built. They will have to enter title and description on the project.  Allow users to search submitted project idea first. If the idea already exists, they can review and vote or comment. If the idea doesn't exist, they should be able to submit idea as described above. this page is for etan.io if you would like to see the current theme. 

@@ -14,7 +14,7 @@
   <body>
     <header>
       <nav>
-        <div class="bg-dark">
+        <div class="black-bg">
           <div class="container">
             <ul class="d-flex justify-content-end">
               <li><a class="nav-link" href="">Follow us</a></li>
@@ -26,31 +26,31 @@
             </ul>
           </div>
         </div>
-        <div class="bg-primary mt-n3">
+        <div class="yellow-bg mt-n3">
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-              <a href="#" class="logo">iDea++</a>
-              <a href="#" class="btn btn-warning">Subscribe to Newsletter</a>
+              <a href="#" class="logo text-black">iDea++</a>
+              <a href="#" class="black-bg text-yellow px-4 rounded py-2 shadow">Subscribe to Newsletter</a>
             </div>
           </div>
         </div>
         <div class="bg-light">
           <div class="container">
             <ul class="d-flex justify-content-between">
-              <li><a class="nav-link" href="#">Home</a></li>
-              <li><a class="nav-link" href="#">About Us</a></li>
-              <li><a class="nav-link" href="#">Our Team</a></li>
-              <li><a class="nav-link" href="#">Projects</a></li>
-              <li><a class="nav-link" href="#">Offers</a></li>
-              <li><a class="nav-link" href="#">Advertise</a></li>
+              <li><a class="nav-link text-black" href="#">Home</a></li>
+              <li><a class="nav-link text-black" href="#">About Us</a></li>
+              <li><a class="nav-link text-black" href="#">Our Team</a></li>
+              <li><a class="nav-link text-black" href="#">Projects</a></li>
+              <li><a class="nav-link text-black" href="#">Offers</a></li>
+              <li><a class="nav-link text-black" href="#">Advertise</a></li>
               <% if current_user %>
-              <li><a href="#" class="nav-link"><%= current_user.email %></a></li>
-              <li><%= link_to "Log Out", logout_path, class: 'nav-link' %></li>
+              <li><a href="#" class="nav-link text-black"><%= current_user.email %></a></li>
+              <li><%= link_to "Log Out", logout_path, class: 'nav-link text-black' %></li>
               <% else %>
-                <li><%= link_to "Sign Up", signup_path, class: 'nav-link' %></li>
-                <li><%= link_to "Log In", login_path, class: 'nav-link' %></li>
+                <li><%= link_to "Sign Up", signup_path, class: 'nav-link text-black' %></li>
+                <li><%= link_to "Log In", login_path, class: 'nav-link text-black' %></li>
               <% end %>
-              <li><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+              <li><a class="nav-link text-black" href="#"><i class="fas fa-search"></i></a></li>
             </ul>
           </div>
         </div>

@@ -12,5 +12,24 @@ ul {
 .logo {
   font-family: 'Lobster Two', cursive;
   font-size: 3em;
-  color: white;
+}
+
+.black-bg {
+  background: #111820;
+}
+
+.black-bg a {
+  color: #f3aa4e;
+}
+
+.yellow-bg {
+  background: #f3aa4e;
+}
+
+.text-black {
+  color: #111820;
+}
+
+.text-yellow {
+  color: #f3aa4e;
 }

@@ -33,3 +33,18 @@ ul {
 .text-yellow {
   color: #f3aa4e;
 }
+
+footer a {
+  line-height: 2.2;
+}
+
+.form-control {
+  height: 2.7em !important;
+}
+
+[type="submit"] {
+  color: #111820;
+  font-weight: bold;
+  background: #f3aa4e;
+  border: none;
+}

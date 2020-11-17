@@ -48,3 +48,21 @@ footer a {
   background: #f3aa4e;
   border: none;
 }
+
+.title {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #111820;
+  text-decoration: underline;
+  text-decoration-color: #f3aa4e;
+}
+
+.date, .owner {
+  font-size: 0.85em;
+}
+
+button.more-projects {
+  background: #f3aa4e;
+  font-weight: bold;
+  /* color: #fff; */
+}

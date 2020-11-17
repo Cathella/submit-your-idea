@@ -2,6 +2,7 @@ body {
   font-size: 1em;
   padding: 0;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul {
@@ -57,12 +58,35 @@ footer a {
   text-decoration-color: #f3aa4e;
 }
 
+.popular {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
 .date, .owner {
   font-size: 0.85em;
+  font-weight: bold;
 }
 
 button.more-projects {
   background: #f3aa4e;
   font-weight: bold;
-  /* color: #fff; */
+  padding: 1em 2em;
+}
+
+.desc {
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.desc-link {
+  font-weight: bold;
+  font-size: 0.87em;
+}
+
+p, 
+nav, 
+button, 
+footer {
+  font-family: 'Source Sans Pro', sans-serif;
 }

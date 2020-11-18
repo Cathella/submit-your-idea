@@ -87,6 +87,31 @@ button.more-projects {
 p, 
 nav, 
 button, 
-footer {
+footer, 
+form, 
+h3 {
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+button.news-btn {
+  border: none;
+  color: #ffffff;
+  background: #f28d0f;
+  padding: 0 1em;
+  height: 35px;
+  margin: 4px 0 0 -2.9em;
+  z-index: 99;
+}
+
+.newsletter {
+  border: 10px solid #f28d0f;
+}
+
+.newsletter input {
+  border: none;
 }

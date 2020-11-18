@@ -1,15 +1,117 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  font-family: 'Lobster Two', cursive;
+  font-size: 3em;
+}
+
+.black-bg {
+  background: #111820;
+}
+
+.black-bg a {
+  color: #f3aa4e;
+}
+
+.yellow-bg {
+  background: #f3aa4e;
+}
+
+.text-black {
+  color: #111820;
+}
+
+.text-yellow {
+  color: #f3aa4e;
+}
+
+footer a {
+  line-height: 2.2;
+}
+
+.form-control {
+  height: 2.7em !important;
+}
+
+[type="submit"] {
+  color: #111820;
+  font-weight: bold;
+  background: #f3aa4e;
+  border: none;
+}
+
+.title {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: #111820;
+  text-decoration: underline;
+  text-decoration-color: #f3aa4e;
+}
+
+.popular {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.date, .owner {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+button.more-projects {
+  background: #f3aa4e;
+  font-weight: bold;
+  padding: 1em 2em;
+}
+
+.desc {
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.desc-link {
+  font-weight: bold;
+  font-size: 0.87em;
+}
+
+p, 
+nav, 
+button, 
+footer, 
+form, 
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+button.news-btn {
+  border: none;
+  color: #ffffff;
+  background: #f28d0f;
+  padding: 0 1em;
+  height: 35px;
+  margin: 4px 0 0 -2.9em;
+  z-index: 99;
+}
+
+.newsletter {
+  border: 10px solid #f28d0f;
+}
+
+.newsletter input {
+  border: none;
+}

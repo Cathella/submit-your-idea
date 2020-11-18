@@ -1,15 +1,154 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SubmitYourIdea</title>
+    <title>IDea++ - Bringing Your Ideas to Life</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <header>
+      <nav>
+        <div class="black-bg">
+          <div class="container">
+            <ul class="d-flex justify-content-end">
+              <li><a class="nav-link" href="">Follow us</a></li>
+              <li><a class="nav-link" href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="nav-link" href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a class="nav-link" href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a class="nav-link" href=""><i class="fab fa-youtube"></i></a></li>
+              <li><a class="nav-link" href=""><i class="fas fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="yellow-bg mt-n3">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="/" class="logo text-black">iDea++</a>
+              <a href="#" class="black-bg text-yellow px-4 rounded py-2 shadow">Subscribe to Newsletter</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light">
+          <div class="container">
+            <ul class="d-flex justify-content-between">
+              <li><a class="nav-link text-black" href="#">Home</a></li>
+              <li><a class="nav-link text-black" href="#">About Us</a></li>
+              <li><a class="nav-link text-black" href="#">Our Team</a></li>
+              <li><a class="nav-link text-black" href="#">Projects</a></li>
+              <li><a class="nav-link text-black" href="#">Offers</a></li>
+              <li><a class="nav-link text-black" href="#">Advertise</a></li>
+              <% if current_user %>
+              <li><a href="#" class="nav-link text-black"><%= current_user.email %></a></li>
+              <li><%= link_to "Log Out", logout_path, class: 'nav-link text-black' %></li>
+              <% else %>
+                <li><%= link_to "Sign Up", signup_path, class: 'nav-link text-black' %></li>
+                <li><%= link_to "Log In", login_path, class: 'nav-link text-black' %></li>
+              <% end %>
+              <li><a class="nav-link text-black" href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <%= yield %>
+
+    <footer class="black-bg pt-5 pb-3">
+      <div class="container">
+        <div class="row pb-4 pt-3 mb-4 text-white">
+          <div class="col-md-3">
+            <div class="d-flex flex-column pb-3">
+              <i class="fab fa-twitter fa-2x pb-2"></i>
+              <p>100 Followers</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column pb-3">
+              <i class="fab fa-facebook-f fa-2x pb-2"></i>
+              <p>100 Followers</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column pb-3">
+              <i class="fab fa-linkedin-in fa-2x pb-2"></i>
+              <p>100 Followers</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column pb-3">
+              <i class="fab fa-youtube fa-2x pb-2"></i>
+              <p>100 Subscribers</p>
+            </div>
+          </div>
+        </div>
+        <div class="row border-bottom border-dark pb-4 mb-4">
+          <div class="col-md-3">
+            <div class="d-flex flex-column">
+              <p class="text-yellow font-weight-bold">About</p>
+              <a href="#">About Us</a>
+              <a href="#">Advertising</a>
+              <a href="#">Editorial Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column">
+              <p class="text-yellow font-weight-bold">Pages</p>
+              <a href="#">RSS Feeds</a>
+              <a href="#">Deals Store</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Copyright Policy</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column">
+              <p class="text-yellow font-weight-bold">Deals</p>
+              <a href="#">Exclusives</a>
+              <a href="#">Development</a>
+              <a href="#">React</a>
+              <a href="#">Projects</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-column pb-3">
+              <p class="px-4 border border-dark rounded">
+                <a href="#">
+                  <i class="fas fa-rss-square mr-2"></i>
+                  RSS Feeds
+                </a>
+              </p>
+              <p class="px-4 border border-dark rounded">
+                <a href="#">
+                  <i class="fas fa-envelope-square mr-2"></i>
+                  Contact Us
+                </a>
+              </p>
+              <p class="px-4 border border-dark rounded">
+                <a href="#">
+                  <i class="fab fa-telegram mr-2"></i>
+                  Telegram Channel
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <small>
+          <p class="text-yellow text-center">
+              &copy; The iDea++, 2020. All Rights Reserved.
+          </p>
+        </small>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/7290f27402.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

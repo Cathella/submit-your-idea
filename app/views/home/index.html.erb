@@ -1,5 +1,6 @@
-<main class="container">
+<%= render "layouts/header" %>
 
+<main class="container">
   <div class="row my-4">
     <div class="col-md-9">
       <div class="row border-bottom pb-5 mr-3 mt-5">
@@ -132,13 +133,15 @@
   </div>
 
   <div class="newsletter my-5 py-5 yellow-bg shadow rounded">
-    <h3 class="text-center w-50 mx-auto">Ongoing projects Newsletter -- Stay Informed.</h3>
+    <h3 class="text-center w-50 mx-auto"><strong>Projects Newsletter -- Stay Informed.</strong></h3>
     <p class="text-center">Sign up for all your favourite projects' news to get all updates straight to your inbox.</p>
     <div class="text-center">
       <form class="form d-flex w-50 mx-auto">
-        <input type="text" class="form-control" place-holder="Your email address">
+        <input type="text" class="form-control" placeholder="Your email address">
         <button class="btn news-btn"><i class="fas fa-chevron-right"></i></button>
       </form>
     </div>
   </div>
 </main>
+
+<%= render "layouts/footer" %>

@@ -1,17 +1,47 @@
 <div class="container">
   <p id="alert"><%= alert %></p>
-  <h1>Sign In</h1>
-  <%= form_tag sessions_path do |form| %>
-    <div class="field">
-      <%= label_tag :email %>
-      <%= text_field_tag :email %>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="my-3 pt-5"><strong>Login</strong></h2>
+      <div class="d-flex align-items-center mb-5">
+        <div class="line"></div>
+        <div class="text-yellow"><strong>Login with</strong></div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-light w-100 border"><i class="fab fa-google mr-3" style="color: #db4840;"></i>Login with Google</a>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="btn btn-light w-100 border"><i class="fab fa-facebook-f mr-3" style="color: #3073c2;"></i>Login with Facebook</a>
+        </div>
+      </div>
+
+      <div class="login-form">
+        <%= form_tag sessions_path do |form| %>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="field">
+                <%= label_tag :email %>
+                <%= text_field_tag :email %>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="field">
+                <%= label_tag :password %>
+                <%= password_field_tag :password %>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2 mb-4">
+              <div class="actions">
+                <%= submit_tag "Login" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <p>Don't' have an account? <strong><a href="/signup" class="text-yellow ml-2">Create One</a></strong></p>
     </div>
-    <div class="field">
-      <%= label_tag :password %>
-      <%= password_field_tag :password %>
-    </div>
-    <div class="actions">
-      <%= submit_tag "Login" %>
-    </div>
-  <% end %>
+  </div>
 </div>

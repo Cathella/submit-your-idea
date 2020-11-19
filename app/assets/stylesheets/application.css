@@ -20,7 +20,7 @@ ul {
 }
 
 .black-bg a {
-  color: #f3aa4e;
+  color: #6c757d !important
 }
 
 .yellow-bg {
@@ -32,7 +32,8 @@ ul {
 }
 
 .text-yellow {
-  color: #f3aa4e;
+  /* color: #f3aa4e; */
+  color: #f28d0f;
 }
 
 footer a {
@@ -84,12 +85,12 @@ button.more-projects {
   font-size: 0.87em;
 }
 
-p, 
+*, p, a, 
 nav, 
 button, 
 footer, 
 form, 
-h3 {
+h3, h1, h2, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
@@ -114,4 +115,29 @@ button.news-btn {
 
 .newsletter input {
   border: none;
+}
+
+.line {
+  height: 3px;
+  background: #f28d0f;
+  width: 80px;
+  margin: 0 3em 0 0;
+}
+
+.login-form label,
+.login-form input{
+  width: 100%;
+}
+
+.login-form input {
+  margin: 0 0 1em 0;
+  height: 2.7em;
+}
+
+.login-form [type="submit"] {
+  height: 3em;
+  border-radius: 0.25rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+  /* background: #111820; */
+  /* color: #f28d0f; */
 }

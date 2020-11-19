@@ -1,16 +1,24 @@
 <div class="container">
   <div class="row">
-  <div class="col-md-6">
-    <div class="text-center py-5">
-      <h1 class="pt-5 pb-3 mt-0">
-        <i class="far fa-lightbulb fa-4x text-yellow"></i>
-      </h1>
-      <h5 class="pb-5 text-black text-capitalize">Bringing your ideas to life</h5>
-    </div>
-  </div>
     <div class="col-md-6">
-      <h2 class="my-3 pl-5 pt-3">Create Account</h2>
+      <h2 class="my-3 pt-5"><strong>Sign Up</strong></h2>
+      <div class="d-flex align-items-center mb-5">
+        <div class="line"></div>
+        <div class="text-yellow"><strong>Sign up with</strong></div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-light w-100 border"><i class="fab fa-google mr-3" style="color: #db4840;"></i>Sign up with Google</a>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="btn btn-light w-100 border"><i class="fab fa-facebook-f mr-3" style="color: #3073c2;"></i>Sign up with Facebook</a>
+        </div>
+      </div>
+
       <%= render 'form', user: @user %>
+
+      <p>Already have an account? <strong><a href="/login" class="text-yellow ml-2">Log In</a></strong></p>
     </div>
+    <div class="col-md-6"></div>
   </div>
 </div>

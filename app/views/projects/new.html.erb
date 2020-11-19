@@ -1,0 +1,16 @@
+<%= render "layouts/header" %>
+
+<main class="container mb-5">
+  <div class="row mt-4">
+    <div class="col-md-9">
+      <div class="mr-5">
+        <h2 class="my-3 pb-3"><strong>New Project</strong></h2>
+        <%= render 'form', project: @project %>
+        <%= link_to 'Back', projects_path, class: "text-muted" %>
+      </div>
+    </div>
+    <%= render "layouts/sidebar" %>
+  </div>
+</main>
+
+<%= render "layouts/footer" %>

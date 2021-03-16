@@ -15,7 +15,7 @@
               <p class="owner"><i class="far fa-user text-yellow pr-2"></i>Author: <span class="text-muted">Nakitto Catherine</span></p>
             </div>
             <div class="desc">
-              <%= project.summary %>
+              <%= project.summary.truncate_words(50) %>
             </div>
           </div>
         </div>
